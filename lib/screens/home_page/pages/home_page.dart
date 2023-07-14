@@ -121,7 +121,7 @@ class _HomePageState extends State<HomePage> {
                     crossAxisCount: 2,
                     childAspectRatio: 158 / 129,
                   ),
-                   physics: BouncingScrollPhysics(),
+                  physics: BouncingScrollPhysics(),
                   itemCount: BiographItem.bItems.length,
                   itemBuilder: (context, index) {
                     return Padding(
@@ -199,7 +199,9 @@ class _HomePageState extends State<HomePage> {
                     const Text(
                       "Booked an Appointment with \nDr Rebbeka",
                     ),
-                    SizedBox(width: 70,),
+                    SizedBox(
+                      width: 70,
+                    ),
                     ElevatedButton(
                       onPressed: () {},
                       child: const Text(
